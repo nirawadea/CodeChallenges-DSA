@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import SlidingWindow.FirstNegativeNumWindow;
+import BinarySearch.FindNumInSortedArray;
 
 public class Main {
 
@@ -283,6 +284,8 @@ public class Main {
      n.next.next.next = new Node(40);
      n.next.next.next.next = new Node(50);
      n.next.next.next.next.next = n.next;
+
+
 //     System.out.println("Print List");
 //     Node.countNodes(n);
 //     System.out.println(Node.searchNodes(n,30));
@@ -310,6 +313,12 @@ public class Main {
      int knum = 3;
      List li = FirstNegativeNumWindow.firstNegativeWindow(arrNums,knum);
      System.out.println(Arrays.toString(li.toArray()));
+
+     System.out.println("*****************Find Number In A Sorted Array******************");
+     int[] sortedArray = {1,3,5,9,10,11,12,15,20,25,30};
+     int targetValue = 15;
+     boolean resultNum = FindNumInSortedArray.binarySearch(sortedArray, targetValue);
+     System.out.println(resultNum);
 
     }
 
