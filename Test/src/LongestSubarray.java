@@ -5,6 +5,7 @@ public class LongestSubarray {
 
     public static int longestSubarray(int[] arr, long k){
         int n = arr.length;
+
         long sum = 0;
         int maxLen = 0;
         Map<Long, Integer> preSumMap = new HashMap<>();

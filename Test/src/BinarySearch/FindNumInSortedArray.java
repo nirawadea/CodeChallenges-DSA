@@ -1,5 +1,9 @@
 package BinarySearch;
 
+
+//  int[] sortedArray = {1,3,5,9,10,11,12,15,20,25,30};
+//  int targetValue = 15;
+//  output- true
 public class FindNumInSortedArray {
 
     public static boolean binarySearch(int[] arr, int target){

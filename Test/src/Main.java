@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
+import BinarySearch.SearchInsertPosition;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
 
@@ -319,6 +321,17 @@ public class Main {
      int targetValue = 15;
      boolean resultNum = FindNumInSortedArray.binarySearch(sortedArray, targetValue);
      System.out.println(resultNum);
+
+     System.out.println("*****************Search Insert Position******************");
+     //1,3,5,6 ->7
+     int[] numsArray = {1,3,5,6};
+     int tval = 2;
+     SearchInsertPosition search = new SearchInsertPosition();
+     int binarys = search.searchInsert(numsArray,tval);
+     System.out.println(binarys);
+
+
+
 
     }
 
