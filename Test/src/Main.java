@@ -3,9 +3,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+
+import Array.MergeSortedArray;
 import BinarySearch.SearchInsertPosition;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
+import Array.MergeSortedArray;
 
 public class Main {
 
@@ -330,9 +333,14 @@ public class Main {
      int binarys = search.searchInsert(numsArray,tval);
      System.out.println(binarys);
 
-
-
-
+     System.out.println("*****************Merge Sorted Array******************");
+     int[] nums1 = {1,2,3,0,0,0};
+     int[] nums2 = {2,5,6};
+     int m= 3;
+     int n1 = 3;
+     MergeSortedArray mergeSortedArray = new MergeSortedArray();
+     mergeSortedArray.merge(nums1,m,nums2,n1);
+     System.out.println(Arrays.toString(nums1));
     }
 
 
