@@ -1,5 +1,8 @@
 package TwoPointer;
 
+// Tow Pointer approach
+//iterate i through the array and next
+// pointer p where the non-zero element should go
 public class MoveZeros {
     public void moveZeroes(int[] nums) {
         int insertPosition = 0;
@@ -17,4 +20,5 @@ public class MoveZeros {
         }
 
     }
+    // Time complexity is O(n) and Space Complexity O(1)- In place solution no extra memory.
 }
