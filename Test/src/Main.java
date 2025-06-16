@@ -9,6 +9,7 @@ import BinarySearch.SearchInsertPosition;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
 import Array.MergeSortedArray;
+import TwoPointer.MoveZeros;
 
 public class Main {
 
@@ -341,8 +342,12 @@ public class Main {
      MergeSortedArray mergeSortedArray = new MergeSortedArray();
      mergeSortedArray.merge(nums1,m,nums2,n1);
      System.out.println(Arrays.toString(nums1));
+
+     System.out.println("*****************Move Zeros******************");
+     MoveZeros mover = new MoveZeros();
+     int[] Movenums = {0, 1, 0, 3, 12};
+     System.out.println("Before: " + Arrays.toString(Movenums));
+     mover.moveZeroes(Movenums);
+     System.out.println("After: " + Arrays.toString(Movenums));
     }
-
-
-
  }
