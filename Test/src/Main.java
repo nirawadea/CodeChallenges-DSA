@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 
 import Array.MergeSortedArray;
+import BinarySearch.FirstAndLastPosition;
 import BinarySearch.SearchInsertPosition;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
@@ -349,5 +350,13 @@ public class Main {
      System.out.println("Before: " + Arrays.toString(Movenums));
      mover.moveZeroes(Movenums);
      System.out.println("After: " + Arrays.toString(Movenums));
+
+     System.out.println("*****************First and Last Position in a Sorted Array******************");
+     FirstAndLastPosition flp = new FirstAndLastPosition();
+     int[] arryss = {1,3,5,5,5,5,45,80,110};
+     int x = 5;
+     ArrayList<Integer> re =FirstAndLastPosition.findPosition(arryss,x);
+     System.out.println("["+re.get(0)+ " " + re.get(1)+"]");
+
     }
  }
