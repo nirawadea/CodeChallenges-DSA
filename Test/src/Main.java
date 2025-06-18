@@ -316,7 +316,7 @@ public class Main {
 
      System.out.println("*****************First Negative Number In Window******************");
      FirstNegativeNumWindow negativeNum = new FirstNegativeNumWindow();
-     int[] arrNums = {8,1,-2,2,-3,6,8,-1};
+     int[] arrNums = {8,-1,-2,2,-3,6,8,-1};
      int knum = 3;
      List li = FirstNegativeNumWindow.firstNegativeWindow(arrNums,knum);
      System.out.println(Arrays.toString(li.toArray()));

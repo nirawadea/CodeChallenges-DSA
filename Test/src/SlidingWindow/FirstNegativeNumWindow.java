@@ -5,6 +5,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+//use queue to track the negative no's
+//only store values inside the current window
+//always check if arr[i] is negative & in queue then remove it
+
 public class FirstNegativeNumWindow {
 
     public static List<Integer> firstNegativeWindow(int[] arr, int k){
@@ -33,11 +37,9 @@ public class FirstNegativeNumWindow {
             }
             j++;
         }
-
         return list;
-
     }
-
-
-
 }
+
+//TC- O(n)
+//SC- O(k)
