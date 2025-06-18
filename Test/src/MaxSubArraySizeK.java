@@ -1,5 +1,6 @@
 public class MaxSubArraySizeK {
 
+    // [100,200,300,400]
     public int maxSubArray(int k, int[] nums){
 
         int i=0;
@@ -7,8 +8,7 @@ public class MaxSubArraySizeK {
         int n = nums.length;
         int sum = 0;
         int max = 0;
-                               // [100,200,300,400]
-                        //[2,3,-1,4,-2,5,7-,6]
+
         while(j<n) {
             sum += nums[j];
             if(j-i+1 < k){
@@ -22,4 +22,6 @@ public class MaxSubArraySizeK {
         }
         return max;
     }
+    // Time Complexity- O(n), each element is added and removed from the sum exactly once.
+    // Space Complexity- O(1) no additional data structure is used
 }
