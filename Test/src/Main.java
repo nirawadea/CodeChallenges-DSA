@@ -11,6 +11,7 @@ import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
 import Array.MergeSortedArray;
 import TwoPointer.MoveZeros;
+import String.ValidAnagram;
 
 public class Main {
 
@@ -356,7 +357,12 @@ public class Main {
      int[] arryss = {1,3,5,5,5,5,45,80,110};
      int x = 5;
      ArrayList<Integer> re =FirstAndLastPosition.findPosition(arryss,x);
-     System.out.println("["+re.get(0)+ " " + re.get(1)+"]");
 
+     System.out.println("*****************Valid Anagram******************");
+     String s1 = "anagram";
+     String s2 = "nagara";
+     ValidAnagram va = new ValidAnagram();
+     boolean isAnagramCheck = va.isAnagram(s1,s2);
+     System.out.println(isAnagramCheck);
     }
  }
