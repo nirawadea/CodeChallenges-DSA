@@ -7,6 +7,7 @@ import java.util.Scanner;
 import Array.MergeSortedArray;
 import BinarySearch.FirstAndLastPosition;
 import BinarySearch.SearchInsertPosition;
+import SlidingWindow.FindAllAnagrams;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
 import Array.MergeSortedArray;
@@ -364,5 +365,12 @@ public class Main {
      ValidAnagram va = new ValidAnagram();
      boolean isAnagramCheck = va.isAnagram(s1,s2);
      System.out.println(isAnagramCheck);
+
+     System.out.println("*****************Find All Anagrams in a String******************");
+     String str = "cbaebabacd";
+     String str2 = "abc";
+     List<Integer> l = FindAllAnagrams.findAnagram(str,str2);
+     System.out.println(l);
+
     }
  }
