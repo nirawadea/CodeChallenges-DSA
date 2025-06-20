@@ -374,7 +374,7 @@ public class Main {
      System.out.println(l);
 
      System.out.println("*****************Maximum Product Subarray******************");
-     int[] maxSubArr = {2,3,-2,4};
+     int[] maxSubArr = {1,2,-3,0,-4,-5};
      MaxProductSubArray maxSub = new MaxProductSubArray();
      int maxResult = maxSub.maxProduct(maxSubArr);
      System.out.println(maxResult);
