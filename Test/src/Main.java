@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 
+import Array.MaxProductSubArray;
 import Array.MergeSortedArray;
 import BinarySearch.FirstAndLastPosition;
 import BinarySearch.SearchInsertPosition;
@@ -371,6 +372,12 @@ public class Main {
      String str2 = "abc";
      List<Integer> l = FindAllAnagrams.findAnagram(str,str2);
      System.out.println(l);
+
+     System.out.println("*****************Maximum Product Subarray******************");
+     int[] maxSubArr = {2,3,-2,4};
+     MaxProductSubArray maxSub = new MaxProductSubArray();
+     int maxResult = maxSub.maxProduct(maxSubArr);
+     System.out.println(maxResult);
 
     }
  }
