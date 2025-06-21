@@ -318,7 +318,6 @@ public class Main {
 
 
      System.out.println("*****************First Negative Number In Window******************");
-     FirstNegativeNumWindow negativeNum = new FirstNegativeNumWindow();
      int[] arrNums = {8,-1,-2,2,-3,6,8,-1};
      int knum = 3;
      List li = FirstNegativeNumWindow.firstNegativeWindow(arrNums,knum);
@@ -358,7 +357,7 @@ public class Main {
      FirstAndLastPosition flp = new FirstAndLastPosition();
      int[] arryss = {1,3,5,5,5,5,45,80,110};
      int x = 5;
-     ArrayList<Integer> re =FirstAndLastPosition.findPosition(arryss,x);
+     FirstAndLastPosition.findPosition(arryss,x);
 
      System.out.println("*****************Valid Anagram******************");
      String s1 = "anagram";
