@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import Array.MaxProductSubArray;
 import Array.MaxProductSubArrayOptimized;
+import Array.MaxSubArraySum;
 import Array.MergeSortedArray;
 import Array.TwoSum;
 import BinarySearch.FirstAndLastPosition;
@@ -382,12 +383,15 @@ public class Main {
 
      System.out.println("*****************Two Sum - Hashing******************");
      TwoSum ts = new TwoSum();
-     int[] tsArray = {2,6,5,8,11};
+     int[] tsArray = {2,6,5,11};
      int T = 14;
      int[] resAns = ts.twoSum(tsArray,T);
      System.out.println(Arrays.toString(resAns));
 
-
-
+     System.out.println("*****************Maximun SubArray Sum******************");
+     int[] submaxarray = {3,-4,5,4,-1,7,-8};
+     MaxSubArraySum sumMax = new MaxSubArraySum();
+     int resultAns = sumMax.maxSubArray(submaxarray);
+     System.out.println(resultAns);
     }
  }
