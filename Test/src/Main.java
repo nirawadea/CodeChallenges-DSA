@@ -7,6 +7,7 @@ import java.util.Scanner;
 import Array.MaxProductSubArray;
 import Array.MaxProductSubArrayOptimized;
 import Array.MergeSortedArray;
+import Array.TwoSum;
 import BinarySearch.FirstAndLastPosition;
 import BinarySearch.SearchInsertPosition;
 import SlidingWindow.FindAllAnagrams;
@@ -378,6 +379,15 @@ public class Main {
      MaxProductSubArrayOptimized maxSub = new MaxProductSubArrayOptimized();
      int maxResult = maxSub.maxProduct(maxSubArr);
      System.out.println(maxResult);
+
+     System.out.println("*****************Two Sum - Hashing******************");
+     TwoSum ts = new TwoSum();
+     int[] tsArray = {2,6,5,8,11};
+     int T = 14;
+     int[] resAns = ts.twoSum(tsArray,T);
+     System.out.println(Arrays.toString(resAns));
+
+
 
     }
  }
