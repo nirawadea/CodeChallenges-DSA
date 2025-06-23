@@ -17,6 +17,7 @@ import BinarySearch.FindNumInSortedArray;
 import Array.MergeSortedArray;
 import TwoPointer.MoveZeros;
 import String.ValidAnagram;
+import String.LongestSubString;
 
 public class Main {
 
@@ -393,5 +394,11 @@ public class Main {
      MaxSubArraySum sumMax = new MaxSubArraySum();
      int resultAns = sumMax.maxSubArray(submaxarray);
      System.out.println(resultAns);
+
+     System.out.println("*****************Longest Substring******************");
+     String str1 =  "pwwkewxpw";
+     LongestSubString longn = new LongestSubString();
+     System.out.println(LongestSubString.longestString(str1));
+
     }
  }
