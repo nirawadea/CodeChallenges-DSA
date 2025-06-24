@@ -15,6 +15,7 @@ import SlidingWindow.FindAllAnagrams;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
 import Array.MergeSortedArray;
+import TwoPointer.ContainerWithMostWater;
 import TwoPointer.MoveZeros;
 import String.ValidAnagram;
 import String.LongestSubString;
@@ -400,5 +401,10 @@ public class Main {
      LongestSubString longn = new LongestSubString();
      System.out.println(LongestSubString.longestString(str1));
 
+     System.out.println("*****************Container With Most Water******************");
+     int[] height =  {1,8,6,2,5,4,8,3,7};
+     ContainerWithMostWater water = new ContainerWithMostWater();
+     int mostWater = water.maxArea(height);
+     System.out.println(mostWater);
     }
  }
