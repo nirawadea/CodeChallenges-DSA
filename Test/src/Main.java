@@ -11,6 +11,7 @@ import Array.MergeSortedArray;
 import Array.TwoSum;
 import BinarySearch.FirstAndLastPosition;
 import BinarySearch.SearchInsertPosition;
+import LinkedList.ListNode;
 import SlidingWindow.FindAllAnagrams;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
@@ -19,6 +20,8 @@ import TwoPointer.ContainerWithMostWater;
 import TwoPointer.MoveZeros;
 import String.ValidAnagram;
 import String.LongestSubString;
+
+import static LinkedList.ListNode.printList;
 
 public class Main {
 
@@ -406,5 +409,19 @@ public class Main {
      ContainerWithMostWater water = new ContainerWithMostWater();
      int mostWater = water.maxArea(height);
      System.out.println(mostWater);
+
+
+     System.out.println("*****************Merge Sorted LinkedList******************");
+     ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+
+     // Second sorted linked list: 2 -> 4 -> 6
+     ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+
+     // Create an instance to call the non-static method
+     ListNode listnode = new ListNode(0); // dummy node just to access method
+     ListNode merged = listnode.mergeSortedList(l1, l2);
+
+     // Print the merged list
+     printList(merged);
     }
  }
