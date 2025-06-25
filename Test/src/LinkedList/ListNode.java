@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.Stack;
+
 public class ListNode {
 
     int val;
@@ -45,5 +47,25 @@ public class ListNode {
             System.out.println(head.val + "");
             head = head.next;
         }
+    }
+
+    public ListNode reverseList(ListNode head){
+
+        Stack<Integer> valueStack = new Stack<>();
+
+        while(head != null){
+            valueStack.push(head.val);
+            head = head.next;
+        }
+
+        ListNode reverseNode = new ListNode(Integer.MAX_VALUE);
+        ListNode ptr = reverseNode;
+
+        while(!valueStack.isEmpty()){
+            ptr.next = new ListNode(valueStack.pop());
+            ptr = ptr.next;
+        }
+
+        return reverseNode.next;
     }
 }

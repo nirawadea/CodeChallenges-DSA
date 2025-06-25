@@ -417,11 +417,20 @@ public class Main {
      // Second sorted linked list: 2 -> 4 -> 6
      ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
+
+     // reverse list
+     // Create linked list: 1 -> 2 -> 3 -> 4
+     ListNode node4 = new ListNode(4);
+     ListNode node3 = new ListNode(3, node4);
+     ListNode node2 = new ListNode(2, node3);
+     ListNode head = new ListNode(1, node2);
+
      // Create an instance to call the non-static method
      ListNode listnode = new ListNode(0); // dummy node just to access method
-     ListNode merged = listnode.mergeSortedList(l1, l2);
+     ListNode reversed = listnode.reverseList(head);
 
      // Print the merged list
-     printList(merged);
+     System.out.println("\nReversed List:");
+     printList(reversed);
     }
  }
