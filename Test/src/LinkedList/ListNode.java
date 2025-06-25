@@ -16,8 +16,11 @@ public class ListNode {
 
     public ListNode mergeSortedList(ListNode l1, ListNode l2) {
 
+        //
         ListNode dummyNode = new ListNode(Integer.MAX_VALUE);
+        //copy of dummyNode to traverse
         ListNode temp = dummyNode;
+        // traverse until one of the list reaches end
         while(l1 != null && l2 != null){
             if(l1.val <= l2.val){
                 temp.next = l1;
