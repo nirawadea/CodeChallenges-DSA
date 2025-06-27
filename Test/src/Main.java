@@ -20,6 +20,7 @@ import TwoPointer.ContainerWithMostWater;
 import TwoPointer.MoveZeros;
 import String.ValidAnagram;
 import String.LongestSubString;
+import TwoPointer.TrappingRainWater;
 
 import static LinkedList.ListNode.printList;
 
@@ -432,5 +433,12 @@ public class Main {
      // Print the merged list
      System.out.println("\nReversed List:");
      printList(reversed);
+
+     System.out.println("*****************Trapping Rain Water******************");
+     TrappingRainWater tp = new TrappingRainWater();
+     int[] heightBar = {4,2,0,3,2,5};
+     int trapwater = tp.trap(heightBar);
+     System.out.println(trapwater);
+
     }
  }
