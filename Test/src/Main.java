@@ -412,11 +412,11 @@ public class Main {
      System.out.println(mostWater);
 
 
-     System.out.println("*****************Merge Sorted LinkedList******************");
-     ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-
-     // Second sorted linked list: 2 -> 4 -> 6
-     ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+//     System.out.println("*****************Merge Sorted LinkedList******************");
+//     ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+//
+//     // Second sorted linked list: 2 -> 4 -> 6
+//     ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
 
      // reverse list
@@ -439,6 +439,20 @@ public class Main {
      int[] heightBar = {4,2,0,3,2,5};
      int trapwater = tp.trap(heightBar);
      System.out.println(trapwater);
+
+     System.out.println("*****************Top K Frequent Element******************");
+     TopKFreq least = new TopKFreq();
+     int[] freq = {1,1,1,1,2,2,3};
+     int kElements = 2;
+     int[] leastEle =  least.topKFrequent(freq,kElements);
+     System.out.println(Arrays.toString(leastEle));
+
+     System.out.println("***************** Kth Largest Element******************");
+     KthLargestElement kthLargestElement = new KthLargestElement();
+     int[] nums3 = {3,2,1,5,6,4};
+     int k2 = 2;
+     int result1 =  kthLargestElement.findKthLargest(nums3,k2);
+     System.out.println(result1);
 
     }
  }

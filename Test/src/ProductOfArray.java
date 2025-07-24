@@ -1,6 +1,5 @@
 public class ProductOfArray {
     // Product of Array Except Itself
-    
 
     public static int[] productExceptItsel(int[] arr){
 
@@ -17,8 +16,9 @@ public class ProductOfArray {
 //            ansArray[i] = product;
 //        }
 //        return ansArray;
-        int product = 1;
+
         for(int i=0; i<n; i++){
+            int product = 1;
             product *= arr[i];
             if(product > 1){
                 ansArray[i] = product;
