@@ -1,10 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 
-import Array.MaxProductSubArray;
 import Array.MaxProductSubArrayOptimized;
 import Array.MaxSubArraySum;
 import Array.MergeSortedArray;
@@ -12,10 +10,11 @@ import Array.TwoSum;
 import BinarySearch.FirstAndLastPosition;
 import BinarySearch.SearchInsertPosition;
 import LinkedList.ListNode;
+import PriorityQueue.KthLargestElement;
+import PriorityQueue.TopKFreq;
 import SlidingWindow.FindAllAnagrams;
 import SlidingWindow.FirstNegativeNumWindow;
 import BinarySearch.FindNumInSortedArray;
-import Array.MergeSortedArray;
 import TwoPointer.ContainerWithMostWater;
 import TwoPointer.MoveZeros;
 import String.ValidAnagram;
