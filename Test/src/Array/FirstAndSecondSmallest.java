@@ -5,39 +5,41 @@ import java.util.Arrays;
 
 public class FirstAndSecondSmallest {
 
-    public ArrayList<Integer> findFirstAndSecond(int[] arr){
-        Arrays.sort(arr);
-        int min = arr[0];
-        int secondMin = Integer.MIN_VALUE;
-
-        for(int i=0; i<arr.length; i++){
-            if(arr[i] != min){
-                secondMin = arr[i];
-                break;
-            }
-        }
-
-        // if 2nd min not present then
-        if(secondMin == Integer.MIN_VALUE){
+    public ArrayList<Integer> findFirstAndSecond(int[] arr) {
+        if (arr == null || arr.length < 2) {
             ArrayList<Integer> res = new ArrayList<>();
             res.add(-1);
             return res;
         }
 
-        // if found 2nd min then..
+        int firstMin = Integer.MAX_VALUE;
+        int secondMin = Integer.MAX_VALUE;
+
+        for (int num : arr) {
+            if (num < firstMin) {
+                secondMin = firstMin;
+                firstMin = num;
+            } else if (num != firstMin && num < secondMin) {
+                secondMin = num;
+            }
+        }
+
         ArrayList<Integer> result = new ArrayList<>();
-        result.add(min);
-        result.add(secondMin);
-        return  result;
+        if (secondMin == Integer.MAX_VALUE) {
+            result.add(-1); // no second unique min
+        } else {
+            result.add(firstMin);
+            result.add(secondMin);
+        }
+        return result;
     }
     public static void main(String[] args) {
-        int[] array = {2,4,3,7,7,5};
-        int[] array1 = {1};
-        FirstAndSecondSmallest firstSecond = new FirstAndSecondSmallest();
-        ArrayList<Integer> result = firstSecond.findFirstAndSecond(array1);
+        FirstAndSecondSmallest finder = new FirstAndSecondSmallest();
+        int[] array = {4, 2, 2, 7, 1, 5, 1};
 
-        for(int nums : result){
-            System.out.println(nums);
+        ArrayList<Integer> result = finder.findFirstAndSecond(array);
+        for (int num : result) {
+            System.out.println(num);
         }
     }
 }
