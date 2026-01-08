@@ -24,3 +24,15 @@ Also, Documenting my progress on GitHub helps me track my learning journey and s
 - Java  
 - IntelliJ IDEA  
 - Git & GitHub
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0136-single-number](https://github.com/nirawadea/CodeChallenges-DSA/tree/master/0136-single-number) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0136-single-number](https://github.com/nirawadea/CodeChallenges-DSA/tree/master/0136-single-number) |
+<!---LeetCode Topics End-->
