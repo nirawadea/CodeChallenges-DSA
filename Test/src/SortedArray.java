@@ -13,4 +13,14 @@ public class SortedArray {
         }
         return j+1;
     }
+
+    public static void main(String[] args){
+        SortedArray sortedArray = new SortedArray();
+        int[] arr = {1,1,2};
+        int result = sortedArray.removeDuplicates(arr);
+        System.out.println(result);
+
+    }
 }
+
+
